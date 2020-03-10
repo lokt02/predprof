@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace csharp1
 {
@@ -8,10 +9,10 @@ namespace csharp1
 
         static void Main(string[] args)
         {
-            int octoInt(int octo) {
+            int octoInt(int octo, int m) {
                 int a = 0;
                 int j = Convert.ToString(octo).Length - 1;
-                while (octo % 10 == 7)
+                while (octo % 10 == 2 * m -1)
                 {
                     octo /= 10;
                     a++;
@@ -58,10 +59,11 @@ namespace csharp1
                 return ('(' == lb && ')' == rb) || ('[' == lb && ']' == rb) || ('{' == lb && '}' == rb || ('<' == lb && '>' == rb));
             }
 
-            
-            int n;
+            List<string> brackets = new List<string>();
+            int n, m;
             n = Convert.ToInt32(Console.ReadLine());
-            if(n % 2 != 0)
+            m = Convert.ToInt32(Console.ReadLine());
+            if (n % 2 != 0)
             {
                 Console.WriteLine("NO");
                 return;
@@ -70,22 +72,25 @@ namespace csharp1
             int var = 1;
             for(int i = 1; i <= n; i++)
             {
-                var *= 8;
+                var *= 2 * m;
             }
             for (int i = 0; i < var; i++)
             {
-                bracketCheck(bracketConvert(octo, n));
-                if (octo % 10 == 7)
+                bracketCheck(bracketConvert(octo, n), brackets);
+                if (octo % 10 == 2 * m - 1)
                 {
-                    octo = octoInt(octo);
+                    octo = octoInt(octo, m);
                 }
                 else
                 {
                     octo++;
                 }
             }
+            Console.WriteLine(brackets.Count);
+            IEnumerable<string> brack1 = brackets.Distinct();
+            Console.WriteLine(brack1.Count());
 
-            void bracketCheck(string s) 
+            void bracketCheck(string s, List<string> brackets) 
             {
                 if (s.StartsWith(')') || s.StartsWith(']') || s.StartsWith('}') || s.StartsWith('>'))
                 {
@@ -95,6 +100,7 @@ namespace csharp1
                 if (check(s))
                 {
                     Console.WriteLine("{0} ", s);
+                    brackets.Add(s);
                 }
                 else
                 {
