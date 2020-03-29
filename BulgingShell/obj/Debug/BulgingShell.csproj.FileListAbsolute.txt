@@ -1,0 +1,14 @@
+C:\Users\Сергей\source\repos\BulgingShell\bin\Debug\BulgingShell.exe.config
+C:\Users\Сергей\source\repos\BulgingShell\bin\Debug\BulgingShell.exe
+C:\Users\Сергей\source\repos\BulgingShell\bin\Debug\BulgingShell.pdb
+C:\Users\Сергей\source\repos\BulgingShell\obj\Debug\BulgingShell.csprojAssemblyReference.cache
+C:\Users\Сергей\source\repos\BulgingShell\obj\Debug\MainWindow.g.cs
+C:\Users\Сергей\source\repos\BulgingShell\obj\Debug\App.g.cs
+C:\Users\Сергей\source\repos\BulgingShell\obj\Debug\BulgingShell_MarkupCompile.cache
+C:\Users\Сергей\source\repos\BulgingShell\obj\Debug\BulgingShell_MarkupCompile.lref
+C:\Users\Сергей\source\repos\BulgingShell\obj\Debug\MainWindow.baml
+C:\Users\Сергей\source\repos\BulgingShell\obj\Debug\BulgingShell.g.resources
+C:\Users\Сергей\source\repos\BulgingShell\obj\Debug\BulgingShell.Properties.Resources.resources
+C:\Users\Сергей\source\repos\BulgingShell\obj\Debug\BulgingShell.csproj.GenerateResource.cache
+C:\Users\Сергей\source\repos\BulgingShell\obj\Debug\BulgingShell.exe
+C:\Users\Сергей\source\repos\BulgingShell\obj\Debug\BulgingShell.pdb
